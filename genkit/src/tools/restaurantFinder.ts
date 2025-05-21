@@ -2,7 +2,9 @@
  * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use this file except in compliance with the Licenses
+ *restaurants Finder
+
  * You may obtain a copy of the License at
  *
  *     http://www.apache.org/licenses/LICENSE-2.0
@@ -38,7 +40,7 @@ export const restaurantFinder = ai.defineTool(
     // [END restaurant_tool_desc]
     // [START restaurant_tool_func]
     async (input) => {
-      const MAPS_API_KEY = process.env.MAPS_API_KEY;
+      const MAPS_API_KEY = .env.MAPS_API_KEY;
       
         if (input.typeOfRestaurant == undefined) {
           input.typeOfRestaurant = "Local";
